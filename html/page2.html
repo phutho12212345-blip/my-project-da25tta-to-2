@@ -1,134 +1,76 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Trang thông tin cá nhân</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            width: 800px;
-            margin: auto;
-            background: white;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-
-        h1 {
-            text-transform: uppercase;
-        }
-
-        .profile {
-            display: flex;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        .profile img {
-            width: 100px;
-            margin-right: 15px;
-        }
-
-        table {
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        th, td {
-            padding: 5px 10px;
-        }
-
-        ul {
-            margin-top: 5px;
-        }
-
-        a {
-            color: blue;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <h1>Huỳnh Phú Thọ</h1>
-    <h3>Trang thông tin cá nhân</h3>
-
-    <!-- Giới thiệu -->
-    <div class="profile">
-        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="avatar">
-        <div>
-            <h4>Giới thiệu bản thân</h4>
-            <p>
-                Xin chào! Tôi là <b>Huỳnh Phú Thọ</b>, sinh viên ngành <b>Công nghệ thông tin</b>.
-                Tôi yêu thích lập trình và thiết kế web. Mục tiêu của tôi là trở thành
-                một lập trình viên chuyên nghiệp. Tôi đang học tại <b>Đại học Trà Vinh</b>.
-            </p>
-        </div>
-    </div>
-
-    <!-- Thông tin chi tiết -->
-    <h4>Thông tin chi tiết</h4>
-    <table>
-        <tr>
-            <th>Thông tin</th>
-            <th>Nội dung</th>
-        </tr>
-        <tr>
-            <td>Họ và tên</td>
-            <td>Huỳnh Phú Thọ</td>
-        </tr>
-        <tr>
-            <td>Tuổi</td>
-            <td>19</td>
-        </tr>
-        <tr>
-            <td>Lớp</td>
-            <td>DA25TTA</td>
-        </tr>
-        <tr>
-            <td>Trường</td>
-            <td>Đại học Trà Vinh</td>
-        </tr>
-    </table>
-
-    <!-- Sở thích -->
-    <h4>Sở thích</h4>
-    <ul>
-        <li>Nghe nhạc</li>
-        <li>Xem phim</li>
-        <li>Chơi thể thao</li>
-    </ul>
-
-    <!-- Kỹ năng -->
-    <h4>Kỹ năng và mục tiêu</h4>
-    <ol>
-        <li>Biết HTML cơ bản</li>
-        <li>Đang học CSS và JavaScript</li>
-        <li>Muốn làm website cá nhân</li>
-    </ol>
-
-    <!-- Liên hệ -->
-    <h4>Liên hệ</h4>
+	<head>
+    		<meta charset="UTF-8">
+    		<title>Trang thông tin cá nhân</title>
+		<link rel = "stylesheet" href = "../css/style01.css">
+	</head>
+	<body>
+	<div class="container">
+   		<h3>Huỳnh Phú Thọ</h3>
+    		<p>Trang thông tin cá nhân</p>
+		<table>
+			<tr>
+				<td>
+					<img src = "../assets/images/rose.jpg">
+				</td>
+				<td>
+					<p><b> Giới thiệu bản thân</b></p>
+					<p>
+						Xin chào! Tôi là <b>Huỳnh Phú Thọ</b>, sinh viên ngành <b>Công nghệ thông tin</b>.Tôi <i>yêu thích lập trình và thiết kế web</i>
+						Mục tiêu của tôi là trở thành một<i> lập trình viên chuyên nghiệp</u>. Tôi đang học ại <b> Đại học Trà Vinh</b>.
+						Tôi luôn cố gắng học tập và rèn luyện kỹ năng mỗi ngày.
+					</p>
+				</td>
+			</tr>
+      		</table>
+    		<p>Thông tin chi tiết</p>
+   		 <table>
+        		<tr>
+           	 		<th>Thông tin</th>
+            			<th>Nội dung</th>
+       	 		</tr>
+        		<tr>
+            			<td>Họ và tên</td>
+            			<td>Huỳnh Phú Thọ</td>
+        		</tr>
+        		<tr>
+            			<td>Tuổi</td>
+            			<td>19</td>
+        		</tr>
+        		<tr>
+            			<td>Lớp</td>
+            			<td>DA25TTA</td>
+        		</tr>
+        		<tr>
+            			<td>Trường</td>
+            			<td>Đại học Trà Vinh</td>
+        		</tr>
+    		</table>
+  		<p>Sở thích</p>
+  		<ul>
+        		<li>Nghe nhạc</li>
+       			<li>Xem phim</li>
+        		<li>Chơi thể thao</li>
+    		</ul>
+    <ul>Kỹ năng và mục tiêu</ul>
+    		<ol>
+        		<li>Biết HTML cơ bản</li>
+        		<li>Đang học CSS và JavaScript</li>
+        		<li>Muốn làm website cá nhân</li>
+    		</ol>
+    <p>Liên hệ</p>
     <p>
-        Facebook: <a href="https://facebook.com" target="_blank">Trang Facebook của tôi</a>
+        Facebook: <a href="https://facebook.com/phuthone.chaomoinguoinha" target="_blank">Trang Facebook của tôi</a>
     </p>
     <p>
-        Zalo: <a href="#">Zalo của tôi</a>
+        Zalo: <a href="0377019571">Zalo của tôi</a>
     </p>
     <p>
         GitHub: <a href="https://github.com" target="_blank">GitHub của tôi</a>
     </p>
     <p>
-        Email: <a href="mailto:PHUTHO1112345@gmail.com</a>
+        Email: <a href="mailto:phutho12212345@gmail.com</a>
     </p>
 
 </div>
