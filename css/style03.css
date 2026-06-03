@@ -1,0 +1,67 @@
+/* Viết mã css */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eafaf1;
+    margin: 20px;
+}
+
+table{
+    width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+caption{
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e8b57;
+    margin-bottom: 15px;
+}
+
+th{
+    background-color: #66bb6a;
+    color: white;
+    padding: 12px;
+    border: 1px solid #c8e6c9;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid #c8e6c9;
+}
+
+tr:nth-child(even){
+    background-color: #f1f8f4;
+}
+
+tr:hover{
+    background-color: #dcedc8;
+}
+
+td:nth-child(1),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6){
+    text-align: center;
+}
+
+.thanhtien{
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+#thanhtoan{
+    color: #1b5e20;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tong{
+    background-color: #c8e6c9;
+    font-weight: bold;
+    text-align: center;
+}
