@@ -1,7 +1,7 @@
 /* Reset cơ bản */
 body{
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #eef4ff;
     margin: 0;
     padding: 20px;
 }
@@ -23,17 +23,18 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: white;
-    border-radius: 12px;
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(52, 101, 164, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hiệu ứng hover */
 .item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(52, 101, 164, 0.25);
 }
 
 /* Khung hình ảnh */
@@ -45,8 +46,8 @@ body{
 .image img{
     width: 100%;
     max-width: 150px;
-    border-radius: 10px;
-    border: 2px solid #ddd;
+    border-radius: 12px;
+    border: 2px solid #b8d4ff;
 }
 
 /* Khung thông tin */
@@ -58,14 +59,14 @@ body{
 .info p:first-child{
     font-size: 22px;
     font-weight: bold;
-    color: #d63384;
+    color: #2b5da8;
     margin-bottom: 10px;
 }
 
 /* Giá sản phẩm */
 .info p:nth-child(2){
     font-size: 18px;
-    color: #28a745;
+    color: #ff7b54;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -81,13 +82,13 @@ body{
 .info a{
     display: inline-block;
     text-decoration: none;
-    background-color: #28a745;
+    background-color: #4a90e2;
     color: white;
     padding: 10px 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
 .info a:hover{
-    background-color: #218838;
+    background-color: #2b5da8;
 }
