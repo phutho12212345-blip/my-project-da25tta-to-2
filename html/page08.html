@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <title>Thiết kế trang giới thiệu sản phẩm</title>
-         <meta charset="utf-8">
-          <!-- Latest compiled and minifled CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhuTho Badminton</title>
 
-        <!-- Latest compiled  JavaScript-->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-         <script src = "../js/lib.js"></script>
-    </head>
-    <body>
-        <div class = "container bg-danger">
-               <div id ="product-list" class = "row">
-                    <!--Chưa danh sách các sản phẩm-->
-            </div>
+    <link rel="stylesheet" href = "../css/style05.css">
+     <script src = "../js/lib.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>🏸 PHUTHO BADMINTON</h1>
+
+    <div class="cart-icon" onclick="showCart()">
+        🛒 Giỏ hàng
+        <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="banner">
+    <h2>VỢT CẦU LÔNG CHÍNH HÃNG</h2>
+</section>
+<footer>
+    <div class="footer-grid">
+
+        <div>
+            <h3>Liên hệ</h3>
+            <p>📞 0377019571</p>
+            <p></p>📧 phutho12212345@gmail.com</p>
         </div>
-       <script>
-            loadAllProducts(products);
-       </script>
-    </body>
+
+        <div>
+            <h3>Địa chỉ</h3>
+            <p>📍 Ấp Sơn Ton, Xã Cù Lao Dung</p>
+            <p>Thành Phố Cần Thơ</p>
+        </div>
+
+    </div>
+</footer>
+<div class="search">
+    <input
+        type="text"
+        id="search"
+        placeholder="Tìm kiếm sản phẩm..."
+        onkeyup="searchProduct()">
+</div>
+
+<div id="product-list"></div>
+
+<!-- Chi tiết sản phẩm -->
+<div id="detailModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeDetail()">&times;</span>
+
+        <img id="detailImage">
+
+        <h2 id="detailName"></h2>
+
+        <p id="detailPrice"></p>
+
+        <p id="detailDescription"></p>
+    </div>
+</div>
+
+<!-- Giỏ hàng -->
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+        onclick="closeCart()">&times;</span>
+
+        <h2>🛒 Giỏ hàng</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>
+            Tổng tiền:
+            <span id="total-price">0</span> VNĐ
+        </h3>
+
+        <button onclick="checkout()">
+            Thanh toán
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/lib.js"></script>
+
+</body>
 </html>
