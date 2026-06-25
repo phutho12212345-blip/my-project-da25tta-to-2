@@ -18,6 +18,11 @@
         <span id="cart-count">0</span>
     </div>
 </header>
+<nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Liên hệ</a>
+</nav>
 
 <section class="banner">
     <h2>VỢT CẦU LÔNG CHÍNH HÃNG</h2>
@@ -28,7 +33,7 @@
         <div>
             <h3>Liên hệ</h3>
             <p>📞 0377019571</p>
-            <p></p>📧 phutho12212345@gmail.com</p>
+            <p>📧 phutho12212345@gmail.com</p>
         </div>
 
         <div>
@@ -39,7 +44,39 @@
 
     </div>
 </footer>
+
+
+
+<section class="intro">
+
+    <h2>Giới Thiệu PhuTho Badminton</h2>
+
+    <p>
+        Chào mừng bạn đến với <strong>PhuTho Badminton</strong>,
+        cửa hàng chuyên cung cấp các sản phẩm cầu lông chính hãng
+        từ những thương hiệu nổi tiếng như Yonex, Lining, Victor,
+        Mizuno, Kawasaki và nhiều thương hiệu uy tín khác.
+    </p>
+
+    <p>
+        Chúng tôi mang đến đa dạng sản phẩm gồm vợt cầu lông,
+        giày cầu lông, túi đựng vợt, dây cước, quấn cán, quần áo
+        thể thao và ống cầu chất lượng cao, đáp ứng nhu cầu từ
+        người mới bắt đầu đến vận động viên chuyên nghiệp.
+    </p>
+
+    <p>
+        Với phương châm <strong>"Chất lượng tạo nên đẳng cấp"</strong>,
+        PhuTho Badminton cam kết cung cấp sản phẩm chính hãng,
+        giá cả hợp lý, dịch vụ tận tâm và hỗ trợ khách hàng nhanh chóng.
+        Chúng tôi luôn mong muốn đồng hành cùng bạn trên hành trình
+        nâng cao kỹ năng và niềm đam mê với môn cầu lông.
+    </p>
+
+</section>
+
 <div class="search">
+    <h3>Tìm kiếm sản phẩm</h3>
     <input
         type="text"
         id="search"
@@ -48,6 +85,31 @@
 </div>
 
 <div id="product-list"></div>
+
+<div class="filter-box">
+
+    <select id="categoryFilter" onchange="filterProducts()">
+
+        <option value="all">Tất cả danh mục</option>
+        <option value="Vợt cầu lông">Vợt cầu lông</option>
+        <option value="Túi đựng vợt">Túi đựng vợt</option>
+        <option value="Dây cước">Dây cước</option>
+        <option value="Quấn cán">Quấn cán</option>
+        <option value="Giày cầu lông">Giày cầu lông</option>
+        <option value="Quần áo">Quần áo</option>
+        <option value="Ống cầu">Ống cầu</option>
+
+    </select>
+
+    <select id="sortPrice" onchange="filterProducts()">
+
+        <option value="default">Sắp xếp giá</option>
+        <option value="asc">Giá tăng dần</option>
+        <option value="desc">Giá giảm dần</option>
+
+    </select>
+
+</div>
 
 <!-- Chi tiết sản phẩm -->
 <div id="detailModal" class="modal">
@@ -89,7 +151,44 @@
 
 </div>
 
-<script src="../js/lib.js"></script>
+<div id="checkoutModal" class="modal">
 
+    <div class="modal-content">
+
+        <span class="close"
+        onclick="closeCheckout()">
+        &times;
+        </span>
+
+        <h2>Thông tin giao hàng</h2>
+
+        <input
+        type="text"
+        id="customerName"
+        placeholder="Họ và tên">
+
+        <br><br>
+
+        <input
+        type="text"
+        id="customerPhone"
+        placeholder="Số điện thoại">
+
+        <br><br>
+
+        <textarea
+        id="customerAddress"
+        placeholder="Địa chỉ giao hàng">
+        </textarea>
+
+        <br><br>
+
+        <button onclick="confirmOrder()">
+            Xác nhận đặt hàng
+        </button>
+
+    </div>
+
+</div>
 </body>
 </html>
